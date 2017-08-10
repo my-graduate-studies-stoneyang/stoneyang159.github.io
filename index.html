@@ -1,1 +1,151 @@
-Hello World
+<html>
+<head>
+
+<style>
+
+body 
+{
+	/*
+	font顺序：
+	“font-style设置斜体(italic) font-variant(small-caps小型大写字体,inherit从父元素继承)
+	font-weight(bold粗体、bolder更粗、lighter更细、inherit继承、100-900(400对应默认值))
+	font-size字体大小/line-height行间距 font-family指定段落的字体”
+	font-size和font-family的值是必需的。如果缺少了其他值，默认值将被插入
+	可以有多个font，用','隔开，是一种备用机制
+	*/
+	font: 14px/1.5 'Microsoft YaHei',arial,tahoma,\5b8b\4f53,sans-serif;
+	text-indent:50px;
+	background-image:url('425H(lowerpixel).jpg');
+	background-repeat:no-repeat;
+}
+
+
+h1   
+{
+	font-size:40pt;
+	margin-left:15px;
+	color:#fafafa;
+	color:magenta;
+	letter-spacing: 0;
+	text-shadow: 0px 1px 0px #999,0px 2px 0px #888,
+	0px 3px 0px #777,0px 4px 0px #666,
+	0px 5px 0px #555,0px 6px 0px #444,
+	0px 7px 0px #333,0px 8px 7px #001135 
+}
+
+hr   
+{
+	color:navy;
+}
+ul
+{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+}
+li
+{
+float:left;
+}
+p
+{
+	margin-left:15px;
+	font-size:20pt;
+}
+
+#link1:link
+  {color:green;text-decoration:none;}
+#link1:visited
+  {color:yellow;}
+#link1:hover 
+  {color:black;font-size:150%;}
+#link1:active
+  {color:blue;}
+
+#link2:link,#link2:visited
+{
+display:block;
+font-weight:bold;
+color:#FFFFFF;
+background-color:#98bf21;
+width:120px;
+text-align:center;
+padding:4px;
+text-decoration:none;
+}
+#link2:hover,#link2:active
+{
+/*background-color:#7A991A;*/
+}
+
+#link3:link,#link3:visited
+{
+display:block;
+width:450px;
+font-weight:bold;
+color:#FFFFFF;
+background-color:#98bf21;
+text-align:center;
+padding:4px;
+text-decoration:none;
+text-transform:uppercase;
+}
+#link3:hover,#link3:active
+{
+ background-color:#7A991A;
+}
+
+ .dropdown {
+      position: relative;
+      display: inline-block;
+  }
+
+ .dropdown-content {
+      display: none;/*初始隐藏*/
+      position: absolute;
+      /*
+	  background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 12px 16px;
+	  */
+  }
+
+ .dropdown:hover .dropdown-content {
+      display: block;
+  }
+</style>
+</head>
+
+<body>
+
+<h1>This is a header 1</h1>
+<hr>
+<ul>
+<li>
+<div class="dropdown">
+  <span><a id="link3" href="#home">Home</a></span>
+  <div class="dropdown-content">
+  <span><a id="link3" href="#home">W3Cschool教程</a></span>
+  <span><a id="link3" href="#home">www.w3cschool.cn</a></span>
+  </div>
+</div>
+</li>
+<li><a id="link3" href="#news">News</a></li>
+<li><a id="link3" href="#contact">Contact</a></li>
+<li><a id="link3" href="#about">About</a></li>
+</ul>
+
+<br>
+
+<p><a id="link1" href="CSS002.htm" 
+target="_blank">This is a link</a></p>
+
+<p><a id="link2" href="CSS002.htm" 
+target="_blank">This is another link</a></p>
+
+
+</body>
+</html>
+
